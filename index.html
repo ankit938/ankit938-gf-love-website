@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09030a">
+  <title>For My Favourite Person ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="loveMusic" loop>
+    <source src="music/love-song.mp3" type="audio/mpeg">
+</audio>
+
+  <div id="loader">
+    <div class="loader-box">
+      <div class="terminal">
+        <div>Initializing <span>Love.exe</span>...</div>
+        <div id="bootLines"></div>
+      </div>
+      <div class="loader-heart">♥</div>
+      <p>Made with code & a little too much love.</p>
+    </div>
+  </div>
+
+  <div class="cursor-heart" id="cursorHeart">♥</div>
+  <div class="hearts" id="hearts"></div>
+
+  <header class="nav">
+    <div class="logo">Babu  for you <span>♥</span></div>
+    <button class="music-btn" id="musicBtn" title="Add your song in script.js">♫</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">A little corner of the internet...</p>
+        <h1>made only<br>for <em>you.</em></h1>
+        <p class="hero-sub">Because some feelings deserve more than a WhatsApp message.</p>
+        <button class="primary-btn" onclick="scrollToSection('memories')">Open your surprise <span>→</span></button>
+      </div>
+      <div class="scroll-hint">scroll slowly <span>↓</span></div>
+    </section>
+
+    <section id="memories" class="section memories">
+      <div class="section-head reveal">
+        <span class="section-number">01</span>
+        <div>
+          <p class="eyebrow">little pieces of us</p>
+          <h2>Every picture has<br><em>a feeling.</em></h2>
+        </div>
+      </div>
+
+      <div class="photo-stage">
+        <div class="photo-card" id="photoCard">
+          <div class="photo-number" id="photoNumber">01 / 12</div>
+          <img id="mainPhoto" src="images/photo1.jpg" alt="Our memory">
+          <div class="photo-caption">
+            <span id="photoCaption">My favourite kind of view.</span>
+          </div>
+        </div>
+        <div class="photo-orbit orbit-1">♥</div>
+        <div class="photo-orbit orbit-2">✦</div>
+      </div>
+
+      <div class="photo-controls">
+        <button id="prevBtn">←</button>
+        <div class="dots" id="dots"></div>
+        <button id="nextBtn">→</button>
+      </div>
+      <p class="hint">tap the arrows... let the memories keep coming ✨</p>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-wrap reveal">
+        <div class="quote-mark">“</div>
+        <p class="big-quote">I don't need a perfect life.<br>I just want a life where<br><span>you are in it.</span></p>
+        <p class="signature">— your favourite idiot ❤️</p>
+      </div>
+    </section>
+
+    <section class="section story">
+      <div class="section-head reveal">
+        <span class="section-number">02</span>
+        <div>
+          <p class="eyebrow">our little timeline</p>
+          <h2>Some moments<br>worth keeping.</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot">♥</div>
+          <div class="timeline-card">
+            <span>THE BEGINNING</span>
+            <h3>And then, somehow, there was you.</h3>
+            <p>Out of all the people in the world, life decided to put you in mine. Honestly, one of its best decisions.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot">✦</div>
+          <div class="timeline-card">
+            <span>THE MEMORIES</span>
+            <h3>Ordinary days became favourite days.</h3>
+            <p>It was never really about where we were. It was about who was standing next to me.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-dot">♥</div>
+          <div class="timeline-card">
+            <span>RIGHT NOW</span>
+            <h3>Still choosing you.</h3>
+            <p>On the easy days. On the annoying days. On the days when we don't agree. Still you.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reasons">
+      <div class="section-head reveal">
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">a completely biased list</p>
+          <h2>Reasons I<br><em>love you.</em></h2>
+        </div>
+      </div>
+
+      <div class="reason-grid">
+        <div class="reason-card reveal"><span>01</span><h3>Your smile</h3><p>Dangerously capable of fixing a bad day.</p></div>
+        <div class="reason-card reveal"><span>02</span><h3>Your craziness</h3><p>Because normal would be boring with you.</p></div>
+        <div class="reason-card reveal"><span>03</span><h3>The way you care</h3><p>You notice the little things. I notice that.</p></div>
+        <div class="reason-card reveal"><span>04</span><h3>Your laugh</h3><p>My favourite sound, even when I caused it.</p></div>
+        <div class="reason-card reveal"><span>05</span><h3>Just... you</h3><p>No explanation required. You are enough.</p></div>
+        <div class="reason-card special reveal"><span>∞</span><h3>And the list goes on.</h3><p>Because apparently, one website isn't enough space.</p></div>
+      </div>
+    </section>
+
+    <section class="letter-section">
+      <div class="letter-intro reveal">
+        <p class="eyebrow">one thing i really wanted to say</p>
+        <h2>A letter,<br><em>from me to you.</em></h2>
+        <button class="envelope-btn" id="openLetter">Open the letter 💌</button>
+      </div>
+
+      <div class="letter-overlay" id="letterOverlay">
+        <button class="close-letter" id="closeLetter">×</button>
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body"></div>
+          <div class="letter-paper">
+            <p class="handwritten">Hey you,</p>
+            <p>
+              I know I don't always say everything perfectly.
+              Sometimes I tease you, sometimes I annoy you,
+              and sometimes I act like I don't care just to see you smile.
+            </p>
+            <p>
+              But underneath all of that, there is one very simple truth:
+              <strong>you matter to me. A lot.</strong>
+            </p>
+            <p>
+              Thank you for the laughs, the memories, the random conversations,
+              and for being the person whose smile I can never ignore.
+            </p>
+            <p>
+              I don't know what every tomorrow looks like.
+              But I know who I'd love to have beside me while finding out.
+            </p>
+            <p class="handwritten">Always yours,<br>your person ❤️</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-section">
+      <div class="final-bg"></div>
+      <div class="final-content reveal">
+        <p class="eyebrow">one last thing...</p>
+        <h2 id="finalText">You are<br><em>my favourite.</em></h2>
+        <p class="final-small">Favourite person. Favourite smile. Favourite memories.<br>Basically... favourite everything.</p>
+        <button class="primary-btn" id="foreverBtn">Click this ❤️</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast">Okay fine... I love you a little too much. ❤️</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
