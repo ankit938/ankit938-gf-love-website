@@ -2,8 +2,8 @@ const photos = [
   ["images/photo1.jpg","That smile... unfairly beautiful."],
   ["images/photo2.jpg","My favourite travel companion."],
   ["images/photo3.jpg","Some memories just feel like home."],
-  ["images/photo4.jpg","Two idiots. One beautiful memory."],
-  ["images/photo5.jpg","And somehow, I keep falling for you."],
+  ["images/photo4.jpg","Do pagal se hum… aur ek yaad, jise dil baar-baar jeena chahe. ❤️🫠"],
+  ["images/photo5.jpg","Phir se tumse pyaar ho jaata hai. ❤️"],
   ["images/photo6.jpg","You + me = my favourite view."],
   ["images/photo7.jpg","This one deserves a place in my heart."],
   ["images/photo8.jpg","The kind of moment I wish I could pause."],
@@ -114,7 +114,7 @@ document.getElementById("foreverBtn").onclick = () => {
   const toast = document.getElementById("toast");
   toast.classList.add("show");
   setTimeout(()=>toast.classList.remove("show"),3500);
-  document.getElementById("finalText").innerHTML = "I love you.<br><em>That's it. ❤️</em>";
+  document.getElementById("finalText").innerHTML = "I love you.<br><em> Gugguuu. ❤️</em>";
 };
 
 // Tiny cursor heart trail on desktop
