@@ -130,7 +130,7 @@ document.addEventListener("mousemove", e => {
 const music = document.getElementById("loveMusic");
 
 document.addEventListener("click", function () {
-    music.currentTime = 14; // Song 14 seconds se start hoga
+    music.currentTime = 35; // Song 14 seconds se start hoga
     music.play();
 }, { once: true });
 
