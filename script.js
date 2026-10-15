@@ -43,6 +43,40 @@ function showPhoto(index) {
 document.getElementById("nextBtn").onclick = () => showPhoto(current + 1);
 document.getElementById("prevBtn").onclick = () => showPhoto(current - 1);
 
+
+const pauseBtn = document.getElementById("pauseBtn");
+
+// Yahan timing change karna, 5000 = 5 seconds
+const slideInterval = 3000;
+
+let isPaused = false;
+let slideshowTimer;
+
+function startSlideshow() {
+  clearInterval(slideshowTimer);
+
+  if (!isPaused) {
+    slideshowTimer = setInterval(() => {
+      showPhoto(current + 1);
+    }, slideInterval);
+  }
+}
+
+pauseBtn.onclick = () => {
+  isPaused = !isPaused;
+
+  pauseBtn.textContent = isPaused ? "▶ Play" : "⏸ Pause";
+  pauseBtn.setAttribute("aria-pressed", String(isPaused));
+
+  startSlideshow();
+};
+
+// Start automatic slideshow
+startSlideshow();
+
+
+
+
 function scrollToSection(id) {
   document.getElementById(id).scrollIntoView({behavior:"smooth"});
 }
