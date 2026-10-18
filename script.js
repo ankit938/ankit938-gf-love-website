@@ -164,7 +164,7 @@ document.addEventListener("mousemove", e => {
 const music = document.getElementById("loveMusic");
 
 document.addEventListener("click", function () {
-    music.currentTime = 5; // Song 14 seconds se start hoga
+    music.currentTime = 0; // Song 14 seconds se start hoga
     music.play();
 }, { once: true });
 
